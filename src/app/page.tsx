@@ -151,7 +151,7 @@ export default async function Home({
             </h2>
           </div>
 
-          <div className="mt-4 grid grid-cols-2 gap-3">
+          <div className="mt-4 flex flex-col gap-3">
             <label className="flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
               Monto
               <div className="relative">
@@ -172,7 +172,7 @@ export default async function Home({
 
             <CategoriaField categorias={categorias} />
 
-            <label className="col-span-2 flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+            <label className="flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
               Fecha
               <input
                 name="fecha"
@@ -183,7 +183,7 @@ export default async function Home({
               />
             </label>
 
-            <label className="col-span-2 flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+            <label className="flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
               Descripción (opcional)
               <input
                 name="descripcion"
@@ -285,7 +285,7 @@ export default async function Home({
           {(gastos ?? []).map((g) => (
             <li
               key={g.id}
-              className="group flex items-center justify-between gap-3 px-5 py-3.5"
+              className="flex items-center justify-between gap-3 px-5 py-3.5"
             >
               <div className="min-w-0">
                 <p className="truncate text-sm font-medium text-black dark:text-zinc-50">
@@ -319,7 +319,7 @@ export default async function Home({
                 <Link
                   href={`/gastos/${g.id}/editar`}
                   aria-label="Editar gasto"
-                  className="rounded-md p-1.5 text-zinc-400 opacity-0 transition-opacity hover:bg-black/5 hover:text-black group-hover:opacity-100 focus-visible:opacity-100 dark:hover:bg-white/10 dark:hover:text-zinc-50"
+                  className="rounded-md p-1.5 text-zinc-400 transition-colors hover:bg-black/5 hover:text-black dark:hover:bg-white/10 dark:hover:text-zinc-50"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -335,7 +335,7 @@ export default async function Home({
                   <button
                     type="submit"
                     aria-label="Borrar gasto"
-                    className="rounded-md p-1.5 text-zinc-400 opacity-0 transition-opacity hover:bg-red-50 hover:text-red-600 group-hover:opacity-100 focus-visible:opacity-100 dark:hover:bg-red-500/10 dark:hover:text-red-400"
+                    className="rounded-md p-1.5 text-zinc-400 transition-colors hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-500/10 dark:hover:text-red-400"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

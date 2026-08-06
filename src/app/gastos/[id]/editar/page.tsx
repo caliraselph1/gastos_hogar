@@ -44,7 +44,7 @@ export default async function EditarGastoPage({
           >
             <input type="hidden" name="id" value={gasto.id} />
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="flex flex-col gap-3">
               <label className="flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
                 Monto
                 <div className="relative">
@@ -68,7 +68,7 @@ export default async function EditarGastoPage({
                 valorInicial={gasto.categoria}
               />
 
-              <label className="col-span-2 flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+              <label className="flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
                 Fecha
                 <input
                   name="fecha"
@@ -79,7 +79,7 @@ export default async function EditarGastoPage({
                 />
               </label>
 
-              <label className="col-span-2 flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+              <label className="flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
                 Descripción (opcional)
                 <input
                   name="descripcion"

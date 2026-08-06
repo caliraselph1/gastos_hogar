@@ -20,7 +20,7 @@ export function CategoriaField({
 
   if (nueva) {
     return (
-      <label className="col-span-2 flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+      <label className="flex flex-col gap-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
         Categoría nueva
         <div className="flex gap-1.5">
           <input
